@@ -55,3 +55,8 @@ var PIE = document.body.getElementsByTagName("div")[4];
 PIE.style.height = "5%";
 PIE.style.border="3px solid";
 
+/*Ejercicio 7*/
+var nav = document.createElement(divNav);
+nav.style.height= "5%";
+nav.style.width= "80%";
+nav.style.margin= "10%";
