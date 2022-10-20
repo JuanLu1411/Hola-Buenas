@@ -56,7 +56,31 @@ PIE.style.height = "5%";
 PIE.style.border="3px solid";
 
 /*Ejercicio 7*/
-var nav = document.createElement(divNav);
+const divNav = document.createElement("div");
+var nav = divNav;
+nav.firstElementChild("contenedor");
 nav.style.height= "5%";
 nav.style.width= "80%";
 nav.style.margin= "10%";
+
+/*Ejercicio 8*/
+let ul = document.createElement("ul");
+
+let li1 = document.createElement("li");
+let li1Texto = document.createTextNode("Elemento desordenado 1");
+li1.appendChild(li1Texto);
+ 
+let li2 = document.createElement("li");
+let li2Texto = document.createTextNode("Elemento desordenado 2");
+li2.appendChild(li2Texto);
+ 
+let li3 = document.createElement("li");
+let li3Texto = document.createTextNode("Elemento desordenado 3");
+li3.appendChild(li3Texto);
+
+ul.appendChild(li1);
+ul.appendChild(li2);
+ul.appendChild(li3);
+
+document.body.appendChild(ul);
+document.body.appendChild(ol);
