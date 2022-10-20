@@ -54,28 +54,29 @@ asignacion3.style.height = "80%";
 var PIE = document.body.getElementsByTagName("div")[4];
 PIE.style.height = "5%";
 PIE.style.border="3px solid";
+PIE.style.width = "93.2vw";
 
 /*Ejercicio 7*/
 const divNav = document.createElement("div");
 var nav = divNav;
-nav.firstElementChild("contenedor");
+nav.firstElementChild('contenedor');
 nav.style.height= "5%";
 nav.style.width= "80%";
 nav.style.margin= "10%";
 
 /*Ejercicio 8*/
-let ul = document.createElement("ul");
+var ul = document.createElement("ul");
 
-let li1 = document.createElement("li");
-let li1Texto = document.createTextNode("Elemento desordenado 1");
+var li1 = document.createElement("li");
+var li1Texto = document.createTextNode("Elemento desordenado 1");
 li1.appendChild(li1Texto);
  
-let li2 = document.createElement("li");
-let li2Texto = document.createTextNode("Elemento desordenado 2");
+var li2 = document.createElement("li");
+var li2Texto = document.createTextNode("Elemento desordenado 2");
 li2.appendChild(li2Texto);
  
-let li3 = document.createElement("li");
-let li3Texto = document.createTextNode("Elemento desordenado 3");
+var li3 = document.createElement("li");
+var li3Texto = document.createTextNode("Elemento desordenado 3");
 li3.appendChild(li3Texto);
 
 ul.appendChild(li1);
