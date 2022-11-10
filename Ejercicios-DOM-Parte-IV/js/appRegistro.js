@@ -19,11 +19,13 @@ var email_usu = document.getElementById("email_Vali");
 
 
 //Validador Nombre
+var letras = /^[A-Za-z]+$/;
+
  usuario.onblur = function() {
     if(usuario.value==""){
      nombre_usu.innerHTML = "Este campo no puede estar vacío";
      document.getElementById("name_Vali").style.color = "red";  
-    }else if(usuario.value.mach(/^[A-Za-z]+$/)){
+    }else if(usuario.value.match(/^[A-Za-z]+$/) && usuario.value.length >=3){
       nombre_usu.innerHTML = "OK";
       document.getElementById("name_Vali").style.color = "GREEN";
       }else {
@@ -101,6 +103,12 @@ correo.onblur = function() {
   if(correo.value==""){
    email_usu.innerHTML = "Este campo no puede estar vacío";
    document.getElementById("email_Vali").style.color = "red";  
+  }else if(correo.value.length >=5 && correo.value.includes("@") && correo.value.includes(".com")){
+   email_usu.innerHTML = "OK";
+   document.getElementById("email_Vali").style.color = "green"; 
+  }else{
+   email_usu.innerHTML = "Se requiere que este en formato de correo electronico";
+   document.getElementById("email_Vali").style.color = "red";
   }
 }
 
