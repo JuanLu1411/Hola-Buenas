@@ -1,0 +1,50 @@
+/*# sourceMappingURL=style.css.map */
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: orange;
+}
+
+#header_tabla{
+text-align: center;
+padding-bottom: 20px;
+}
+
+table{
+    font-size: 2rem;
+    align-content: center;
+    background-color: rgb(214, 205, 205);
+    text-align: center;
+    margin-top: 15rem;
+    border-radius: 15px;
+    border: 0.2rem solid var(--pc);
+    margin-left: auto;
+    margin-right: auto;
+}
+td{
+    border-radius: 15px;
+    line-break: anywhere;
+}
+th{
+    background-color: var(--pc);
+    color: white;
+    border-radius: 15px;
+}
